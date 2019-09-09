@@ -1,7 +1,6 @@
 import React from 'react';
 import { MdDelete, MdCreate } from 'react-icons/md'
 
-
 const ExpenseItem = ({ 
     expense: { id, charge, amount },
     handleDelete,
