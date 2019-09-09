@@ -1,33 +1,128 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.percent-text {
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.form-container {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+form {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 80%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-group {
+  margin-bottom: 20px;
+}
+
+input[type=text] {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.15), 
+  1px 0 4px 1px rgba(0, 0, 0, 0.10);
+  border: 1px solid rgba(49, 37, 37, 0.2);
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+  width: 60%;
+  align-self: flex-start;
+} 
+
+input[type=number]{
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.15), 
+  1px 0 4px 1px rgba(0, 0, 0, 0.10);
+  border: 1px solid rgba(49, 37, 37, 0.2);
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+  width: 30%;
+  align-self: flex-end;
+}
+
+input:focus {
+  box-shadow: 0 0 7px 1px dodgerBlue, 
+  0 0 4px 1px rgba(0, 0, 0, 0.13);
+  outline: none;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.add__btn {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  background: dodgerBlue;
+  color: #fff; 
+  font-size: 18px;
+  font-weight: 700;
+  align-self: center;
+}
+
+.clear-btn {
+  color: #fff;
+  background: crimson;
+  margin-bottom: 20px;
+}
+
+.delete-btn {
+  color: crimson;
+  background: #f1f1f1;
+  margin: 10px;
+}
+
+.edit-btn {
+  color: green;
+  background: #f1f1f1;
+  margin: 10px;
+}
+
+.expense-list {
+  margin-top: 30px;
+}
+
+.expense-form {
+  border-top: 1px solid #333;
+  padding-top: 20px;
+}
+
+.expense-item {
+  list-style: none;
+  margin-bottom: 30px;
+  padding: 20px;
+  box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.15), 
+  1px 0 4px 1px rgba(0, 0, 0, 0.10);
+  border-radius: 10px;
+  width: 80%;
+}
+
+.expense {
+  font-size: 22px;
+  font-weight: 700;
+  padding: 10px;
+}
+
+.amount {
+  font-size: 22px;
 }
