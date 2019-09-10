@@ -90,12 +90,14 @@ input:focus {
   color: crimson;
   background: #f1f1f1;
   margin: 10px;
+  font-size: 18px;
 }
 
 .edit-btn {
   color: green;
   background: #f1f1f1;
   margin: 10px;
+  font-size: 18px;
 }
 
 .expense-list {
@@ -117,6 +119,12 @@ input:focus {
   width: 80%;
 }
 
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .expense {
   font-size: 22px;
   font-weight: 700;
@@ -125,4 +133,28 @@ input:focus {
 
 .amount {
   font-size: 22px;
+}
+
+.alert-success {
+  background: green;
+  color: #fff;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alert-danger {
+  background: crimson;
+  color: #fff;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

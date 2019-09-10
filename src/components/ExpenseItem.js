@@ -11,22 +11,22 @@ const ExpenseItem = ({
         <li className='item'>
             <div className='info'>
                 <span className='expense'>{charge}</span>
-                <span className='amount'>{amount}</span>
+                <span className='amount'>$ {amount}</span>
             </div>
-            <div>
+            <div className='btn-container'>
                 <button 
                     className='btn edit-btn'
                     aria-label='edit-button'
                     onClick={() => handleEdit(id)}
                 >
-                    <MdCreate />
+                    <MdCreate /> 
                 </button>
                 <button 
                     className=' btn delete-btn'
                     aria-label='delete button'
                     onClick={() => handleDelete(id)}    
                 >
-                    <MdDelete />
+                    <MdDelete /> 
                 </button>
             </div>
         </li>

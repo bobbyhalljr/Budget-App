@@ -74,7 +74,7 @@ function App() {
       } else {
         const singleExpense = { id: uuid(), charge, amount };
         setExpenses([...expenses, singleExpense]);
-        handleAlert({ type: 'succes', text: 'item added' })
+        handleAlert({ type: 'success', text: 'item added' })
       }
 
       // set charge to empty string
