@@ -5,6 +5,9 @@ import ExpenseList from './components/ExpenseList';
 import Alert from './components/Alert';
 import uuid from 'uuid/v4';
 
+import Total from './components/Total';
+import BottomAppBar from './components/App2.0';
+
 import './App.css';
 
 // const initialExpenses = [
@@ -58,7 +61,7 @@ function App() {
     setAlert({ show: true, type, text })
     setTimeout(() => {
       setAlert({ show: false })
-    }, 5000)
+    }, 3000)
   }
 
   // Handle Submit
@@ -115,15 +118,7 @@ function App() {
                     type={alert.type}
                     text={alert.text} />}
       <div className="App">
-        <h1>Budget App</h1>
-        <div className='total'>
-          <h2>Total Spending: </h2>
-          <h3 className='total'>
-            $ {expenses.reduce((acc, curr) => {
-                  return (acc += curr.amount);
-                }, 0)}
-          </h3>
-        </div>
+        <Total expenses={expenses} />
         <div className='expense-form'>
           <ExpenseForm
             handleSubmit={handleSubmit}
@@ -142,6 +137,7 @@ function App() {
             clearItems={clearItems}
           />
         </div>
+        {/* <BottomAppBar charge={charge} amount={amount} expenses={expenses}/> */}
       </div>
     </>
   );
