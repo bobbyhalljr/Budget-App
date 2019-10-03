@@ -14,6 +14,7 @@ const CalcBudget = () => {
                     </tr>
                 </th>
                 </table>
+                {/* fihfihidf */}
                 <table>
                 <th className='expenses'>
                     <h2>Expenses</h2>
